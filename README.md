@@ -10,5 +10,4 @@ submission.
 
 • Prioritised input validation and structured data handling to prevent common injection vulnerabilities.
 
-Tech Stack: HTML, CSS, JavaScript, PHP, MySQL
->>>>>>> 034dc77822ac0f6d1cd46992806fa28bf9f8ce27
+Tech Stack: HTML, CSS, JavaScript, PHP, MySQL,Phpmyadmin
