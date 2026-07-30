@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BidMyProperty — Decoupled Architecture
 
 This is a full rewrite of the original monolithic PHP app into three
@@ -74,3 +75,18 @@ The frontend talks to the backend **only** via `fetch()` calls to
 - The nav bar is now consistent across all pages (rendered by `nav.js`)
   rather than each page hand-rolling slightly different nav HTML like the
   original did — a small deliberate simplification for consistency.
+=======
+# BidMyProperty
+BidMyProperty — Bid. Buy. Own. Easily.
+
+• Engineered a full-stack property listing and bidding platform supporting buyer-seller interactions from search to bid 
+submission.
+
+• Designed responsive, mobile-first UI using HTML, CSS, and vanilla JavaScript for cross-device usability.
+
+• Implemented PHP-MySQL backend for property records, bid history, and secure data transactions.
+
+• Prioritised input validation and structured data handling to prevent common injection vulnerabilities.
+
+Tech Stack: HTML, CSS, JavaScript, PHP, MySQL
+>>>>>>> 034dc77822ac0f6d1cd46992806fa28bf9f8ce27
