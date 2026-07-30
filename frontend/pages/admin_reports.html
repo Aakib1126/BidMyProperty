@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Reports</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Reports</h1>
+        <nav>
+            <a href="admin_dashboard.html">Dashboard</a>
+            <a href="admin_users.html">Manage Users</a>
+            <a href="admin_properties.html">Manage Properties</a>
+            <a href="admin_settings.html">Settings</a>
+            <a href="#" id="logoutLink">Logout</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Website Analytics</h2>
+        <p><strong>Total Users:</strong> <span id="totalUsers">-</span></p>
+        <p><strong>Total Properties:</strong> <span id="totalProperties">-</span></p>
+        <p><strong>Total Bids:</strong> <span id="totalBids">-</span></p>
+        <p><strong>Total Revenue from Bids:</strong> $<span id="totalRevenue">-</span></p>
+    </section>
+    <script src="../js/api.js"></script>
+    <script src="../js/admin_logout_helper.js"></script>
+    <script src="../js/admin_reports.js"></script>
+</body>
+</html>

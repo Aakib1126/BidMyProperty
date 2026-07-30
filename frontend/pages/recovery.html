@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Recovery</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h2>Password Recovery</h2>
+    <form id="verifyEmailForm">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Verify Email</button>
+    </form>
+
+    <form id="verifyAnswerForm" style="display:none;">
+        <p><strong>Security Question:</strong> <span id="securityQuestionText"></span></p>
+        <input type="text" name="security_answer" placeholder="Enter your answer" required>
+        <input type="password" name="new_password" placeholder="Enter new password" required>
+        <button type="submit">Verify & Reset</button>
+    </form>
+    <script src="../js/api.js"></script>
+    <script src="../js/recovery.js"></script>
+</body>
+</html>

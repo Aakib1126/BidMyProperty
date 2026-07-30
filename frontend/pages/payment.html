@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <h2>Make a Payment</h2>
+    <form id="paymentForm">
+        <input type="number" name="amount" placeholder="Enter Amount" required>
+        <select name="payment_method" required>
+            <option value="stripe">Credit/Debit Card (Stripe)</option>
+            <option value="paypal">PayPal</option>
+        </select>
+        <button type="submit">Pay</button>
+    </form>
+    <p id="paymentNote" style="color:#888;font-size:14px;"></p>
+    <script src="../js/api.js"></script>
+    <script src="../js/payment.js"></script>
+</body>
+</html>

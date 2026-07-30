@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Registration</title>
+    <link rel="stylesheet" href="../css/admin_login.css">
+</head>
+<body>
+    <div class="container">
+        <form id="adminRegisterForm">
+            <h1>Admin Registration</h1>
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Admin Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <select name="security_question" required>
+                <option value="What is your pet's name?">What is your pet's name?</option>
+                <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+                <option value="What was your first car?">What was your first car?</option>
+            </select>
+            <input type="text" name="security_answer" placeholder="Security Answer" required>
+            <button type="submit">Register</button>
+            <a href="admin_login.html">Already an admin? Login here</a>
+        </form>
+    </div>
+    <script src="../js/api.js"></script>
+    <script src="../js/admin_register.js"></script>
+</body>
+</html>

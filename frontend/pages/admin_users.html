@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Users</h1>
+        <nav>
+            <a href="admin_dashboard.html">Dashboard</a>
+            <a href="admin_properties.html">Manage Properties</a>
+            <a href="admin_reports.html">View Reports</a>
+            <a href="admin_settings.html">Settings</a>
+            <a href="#" id="logoutLink">Logout</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Registered Users</h2>
+        <table border="1">
+            <tr><th>ID</th><th>Name</th><th>Email</th><th>Registered At</th><th>Action</th></tr>
+            <tbody id="usersBody"></tbody>
+        </table>
+    </section>
+    <script src="../js/api.js"></script>
+    <script src="../js/admin_logout_helper.js"></script>
+    <script src="../js/admin_users.js"></script>
+</body>
+</html>

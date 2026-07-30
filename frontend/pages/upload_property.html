@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Property</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1e3c72, #2a5298); margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .upload-container { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.2); width: 400px; text-align: center; }
+        .upload-container h2 { margin-bottom: 20px; color: #2a5298; }
+        .upload-container form { display: flex; flex-direction: column; gap: 15px; }
+        input[type="text"], input[type="number"], textarea, select { padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 15px; }
+        input[type="file"] { border: none; }
+        button { padding: 12px; background: #2a5298; color: white; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; }
+        button:hover { background: #1e3c72; }
+        label { text-align: left; font-weight: bold; color: #444; }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload Property</h2>
+        <form id="uploadForm">
+            <input type="text" name="title" placeholder="Property Title" required>
+            <textarea name="description" placeholder="Description" rows="4" required></textarea>
+            <input type="number" name="current_price" placeholder="Starting Price" required>
+            <select name="category" required>
+                <option value="">Select Category</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+            </select>
+            <label>Upload Images</label>
+            <input type="file" name="images[]" multiple accept="image/*" required>
+            <label>Upload Videos</label>
+            <input type="file" name="videos[]" multiple accept="video/*">
+            <button type="submit">Upload Property</button>
+            <a href="index.html">Back To Home</a>
+        </form>
+    </div>
+    <script src="../js/api.js"></script>
+    <script src="../js/upload_property.js"></script>
+</body>
+</html>

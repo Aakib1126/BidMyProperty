@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Settings</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Settings</h1>
+        <nav>
+            <a href="admin_dashboard.html">Dashboard</a>
+            <a href="admin_users.html">Manage Users</a>
+            <a href="admin_properties.html">Manage Properties</a>
+            <a href="admin_reports.html">View Reports</a>
+            <a href="#" id="logoutLink">Logout</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Update Admin Details</h2>
+        <form id="settingsForm">
+            <input type="text" name="name" required>
+            <input type="email" name="email" required>
+            <input type="password" name="password" placeholder="Enter new password (optional)">
+            <button type="submit">Update Settings</button>
+        </form>
+    </section>
+    <script src="../js/api.js"></script>
+    <script src="../js/admin_logout_helper.js"></script>
+    <script src="../js/admin_settings.js"></script>
+</body>
+</html>

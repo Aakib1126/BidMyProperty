@@ -1,0 +1,124 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation Styling */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    background: #3498db;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #2980b9;
+}
+
+/* Property Listings Section */
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Property List Grid */
+.property-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual Property Card */
+.property {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.property:hover {
+    transform: translateY(-5px);
+}
+
+/* Property Image */
+.property img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Property Title */
+.property h3 a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.property h3 a:hover {
+    color: #3498db;
+}
+
+/* Price & Highest Bid */
+.property p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.property strong {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+    
+    .property-list {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        margin-bottom: 10px;
+    }
+}
