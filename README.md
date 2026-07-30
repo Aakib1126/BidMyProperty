@@ -9,4 +9,5 @@ submission.
 • Implemented PHP-MySQL backend for property records, bid history, and secure data transactions.
 
 • Prioritised input validation and structured data handling to prevent common injection vulnerabilities.
+
 Tech Stack: HTML, CSS, JavaScript, PHP, MySQL
